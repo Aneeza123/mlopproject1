@@ -22,7 +22,7 @@ accuracy = accuracy_score(y_test ,y_pred)
 st.title("Model Accuracy and Real-Time Prediction")
 
 #display accuracy
-st.write(f'Model Accuracy:[accuracy:.2f]")
+st.write(f"Model Accuracy:[accuracy:.2f]")
 
 #Real-time predivtion based on user inputs
 st.header('Real-Time Prediction')
