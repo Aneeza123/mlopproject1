@@ -4,7 +4,7 @@ from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
 
 
-model =joblib.load("liveModelV1.pk1")
+model =joblib.load("Models/liveModelV1.pk1")
 
 data = pd.read_csv('mobile_price_range_data.csv')
 X = data.iloc[:, :]
