@@ -7,7 +7,7 @@ import streamlit as st
 
 model =joblib.load("liveModelV1.pk1")
 
-data = pd.read_csv('mobile_price_range_data.csv')
+data = pd.read_csv('mobile_price_range_data (2).csv')
 X = data.iloc[:, :-1] #excluding the target column assuming the last column is the target
 y =data.iloc[:, -1] #target column
 
@@ -22,7 +22,7 @@ accuracy = accuracy_score(y_test ,y_pred)
 st.title("Model Accuracy and Real-Time Prediction")
 
 #display accuracy
-st.write(f"Model Accuracy:[accuracy:.2f]")
+st.write(f"Model Accuracy:{accuracy:.2f}")
 
 #Real-time predivtion based on user inputs
 st.header('Real-Time Prediction')
